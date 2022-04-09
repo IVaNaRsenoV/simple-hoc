@@ -1,11 +1,12 @@
-
 import { withApp } from './hoc/withApp';
 
-function App() {
+function App(props) {
+  const { item } = props;
+  console.log('App.js')
 
   return (
     <div className="App">
-      App
+      {item}
     </div>
   );
 }
